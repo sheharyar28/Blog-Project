@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Blog-Project/static/css/main.eadf6b58.css",
-    "main.js": "/Blog-Project/static/js/main.bb43c916.js",
+    "main.css": "/Blog-Project/static/css/main.2e3c5ea1.css",
+    "main.js": "/Blog-Project/static/js/main.422aeee7.js",
     "static/js/787.e7e5b0e0.chunk.js": "/Blog-Project/static/js/787.e7e5b0e0.chunk.js",
     "static/media/TechPage.jpg": "/Blog-Project/static/media/TechPage.125ef616c7dfa7fbfff8.jpg",
     "static/media/Main.jpg": "/Blog-Project/static/media/Main.3145a59ec4c67b9c1662.jpg",
@@ -30,12 +30,12 @@
     "static/media/like.png": "/Blog-Project/static/media/like.5b8c7bd7956b104613d6.png",
     "static/media/logo.JPG": "/Blog-Project/static/media/logo.c4067ea386e533cb7561.JPG",
     "index.html": "/Blog-Project/index.html",
-    "main.eadf6b58.css.map": "/Blog-Project/static/css/main.eadf6b58.css.map",
-    "main.bb43c916.js.map": "/Blog-Project/static/js/main.bb43c916.js.map",
+    "main.2e3c5ea1.css.map": "/Blog-Project/static/css/main.2e3c5ea1.css.map",
+    "main.422aeee7.js.map": "/Blog-Project/static/js/main.422aeee7.js.map",
     "787.e7e5b0e0.chunk.js.map": "/Blog-Project/static/js/787.e7e5b0e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eadf6b58.css",
-    "static/js/main.bb43c916.js"
+    "static/css/main.2e3c5ea1.css",
+    "static/js/main.422aeee7.js"
   ]
 }
