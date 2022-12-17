@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Blog-Project/static/css/main.eadf6b58.css",
+    "main.js": "/Blog-Project/static/js/main.3334dd6e.js",
+    "static/js/787.e7e5b0e0.chunk.js": "/Blog-Project/static/js/787.e7e5b0e0.chunk.js",
+    "static/media/TechPage.jpg": "/Blog-Project/static/media/TechPage.125ef616c7dfa7fbfff8.jpg",
+    "static/media/Main.jpg": "/Blog-Project/static/media/Main.3145a59ec4c67b9c1662.jpg",
+    "static/media/ContactUs.jpg": "/Blog-Project/static/media/ContactUs.071d8d8d97f32e41e934.jpg",
+    "static/media/EatriesPage.jpg": "/Blog-Project/static/media/EatriesPage.5155f67ece75a5999a8c.jpg",
+    "static/media/pancake.jpg": "/Blog-Project/static/media/pancake.9699c4f1555263f6c5f5.jpg",
+    "static/media/HomePage.jpg": "/Blog-Project/static/media/HomePage.f9b3e3614b715befc259.jpg",
+    "static/media/eat.jpg": "/Blog-Project/static/media/eat.660dca01d9f1c41bf1c4.jpg",
+    "static/media/sandwichnews8.jpeg": "/Blog-Project/static/media/sandwichnews8.13d04f02d21050697294.jpeg",
+    "static/media/game.jpg": "/Blog-Project/static/media/game.1a58d8dbf3db9bd9ae31.jpg",
+    "static/media/game1.jpg": "/Blog-Project/static/media/game1.b670ca38d2aeee86852e.jpg",
+    "static/media/currentAffairs.jpg": "/Blog-Project/static/media/currentAffairs.713cbe6f1a45c3b9624e.jpg",
+    "static/media/psandwich.jpeg": "/Blog-Project/static/media/psandwich.2969a42a48b0e3142e3b.jpeg",
+    "static/media/NDMA.jpg": "/Blog-Project/static/media/NDMA.24342a502e10d31d2aa2.jpg",
+    "static/media/food.jpg": "/Blog-Project/static/media/food.3ab40c2a59131d8b9a90.jpg",
+    "static/media/news1cars.jpg": "/Blog-Project/static/media/news1cars.617ab5c58f9285b17927.jpg",
+    "static/media/Tech.jpg": "/Blog-Project/static/media/Tech.85dcd61792e5dfcc00f0.jpg",
+    "static/media/CAffairs.jpg": "/Blog-Project/static/media/CAffairs.04882c556ad23630a834.jpg",
+    "static/media/tech.jpg": "/Blog-Project/static/media/tech.9ba762058f16407ad930.jpg",
+    "static/media/wsandwich.jpeg": "/Blog-Project/static/media/wsandwich.be6b0fda2c08221bb5d1.jpeg",
+    "static/media/carsMW.jpg": "/Blog-Project/static/media/carsMW.0300c3596b87353f3f19.jpg",
+    "static/media/user.png": "/Blog-Project/static/media/user.8cab937a7e73bd61f771.png",
+    "static/media/news6mobile.jpg": "/Blog-Project/static/media/news6mobile.ecca54b5ac34f1c2942f.jpg",
+    "static/media/news2Gold.jpg": "/Blog-Project/static/media/news2Gold.fea5949cbd2e3f7a9079.jpg",
+    "static/media/techMobile.jpg": "/Blog-Project/static/media/techMobile.ca15555bbe855d8e5678.jpg",
+    "static/media/like.png": "/Blog-Project/static/media/like.5b8c7bd7956b104613d6.png",
+    "static/media/logo.JPG": "/Blog-Project/static/media/logo.c4067ea386e533cb7561.JPG",
+    "index.html": "/Blog-Project/index.html",
+    "main.eadf6b58.css.map": "/Blog-Project/static/css/main.eadf6b58.css.map",
+    "main.3334dd6e.js.map": "/Blog-Project/static/js/main.3334dd6e.js.map",
+    "787.e7e5b0e0.chunk.js.map": "/Blog-Project/static/js/787.e7e5b0e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eadf6b58.css",
+    "static/js/main.3334dd6e.js"
+  ]
+}
