@@ -20,7 +20,7 @@ import SFoodNews from './Components/NewsPages/SFoodNews';
 import PFoodNews from './Components/NewsPages/PFoodNews';
 import Technology from './Components/Technology';
 import Categories from './Components/Categories';
-import { Button, TextField } from '@mui/material';
+import { Button, TextField, Typography } from '@mui/material';
 function App() {
 
 
@@ -48,11 +48,13 @@ function App() {
     <div className="App">
         
         <Navigation/>
-        <form onSubmit={checkUserPass}>
+        <form onSubmit={checkUserPass} style={{display:'flex',alignItems:'center', padding:4}}>
           <strong>Login Here &emsp;&emsp; </strong>
-        <TextField label="UserName" variant="standard" type='text' placeholder='admin' value={user.username} onChange={changeUsername}/>
-        <TextField label="Password" variant="standard" type='password' placeholder='admin' value={user.password} onChange={changePassword}/>
-        <Button variant="contained" type='submit'>Submit</Button> <Button variant="contained" onClick={()=>setUserlog(false)}>Log Out</Button> &emsp;UserName is admin and Password is admin 
+          <TextField label="UserName" sx={{marginBottom: '16px' ,marginRight:1}} variant="standard" type='text' placeholder='admin' value={user.username} onChange={changeUsername}/>
+          <TextField label="Password" sx={{marginBottom: '16px',marginRight:1}} variant="standard" type='password' placeholder='admin' value={user.password} onChange={changePassword}/>
+          <Button variant="contained" sx={{marginRight:1}} type='submit'>Submit</Button> 
+          <Button variant="contained" onClick={()=>setUserlog(false)}>LogOut</Button> 
+          <Typography sx={{display:{xs:'none',lg:'block'}}}>UserName is admin and Password is admin</Typography> 
         &emsp; &emsp; <strong>{userlogged}</strong>
         </form>
 
