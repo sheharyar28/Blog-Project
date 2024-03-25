@@ -60,27 +60,27 @@ const pushArr = (e)=>{
   return(alert('Post Created Check HomePage'));
 }
 return (
-    <div>
+    <div style={{display:'flex', justifyContent:'center'}}>
 <form onSubmit={pushArr}>
-<br/>      
-<Button variant="contained" component="label">
-  <AddCircleIcon /> Add Image Of Post
-  <input type="file" hidden accept="image/*" onChange={changeImgsrc}/>
-</Button>
-<TextField variant='outlined' label='Image Caption' value={post.imgdes} onChange={changeImgdes} fullWidth required/><br/><br/><br/>
-<TextField variant='outlined' label='Post Name' value={post.name} onChange={changeName} fullWidth required/><br/><br/>
-<TextField variant='outlined' label='Title' value={post.title} onChange={changeTitle} fullWidth required/><br/><br/>
-<TextField variant='outlined' label='Author Name' value={post.author} onChange={changeAuthor} fullWidth required/><br/><br/>
-<TextField variant='outlined' label='Body' value={post.content} onChange={changeContent} multiline rows={5} fullWidth required/><br/><br/>
-<FormControl fullWidth>
-<InputLabel id="select-label">Category</InputLabel>
-<Select value={post.category} labelId="select-label" label='Category' onChange={changeCategory}>
-  <MenuItem value='Technology'>Technology</MenuItem>
-  <MenuItem value='CurrentAffairs'>CurrentAffairs</MenuItem>
-  <MenuItem value='Eatries'>Eatries</MenuItem>
-</Select>
-</FormControl>
-     <Button variant='contained' fullWidth size='small' type='Submit'>Add Post</Button>
+  <br/>      
+  <Button sx={{marginBottom:3, marginTop:3}} variant="contained" component="label">
+    <AddCircleIcon /> Add Image Of Post
+    <input type="file" hidden accept="image/*" onChange={changeImgsrc}/>
+  </Button>
+  <TextField sx={{marginBottom:3}} variant='outlined' label='Image Caption' value={post.imgdes} onChange={changeImgdes} fullWidth required/>
+  <TextField sx={{marginBottom:3}} variant='outlined' label='Post Name' value={post.name} onChange={changeName} fullWidth required/>
+  <TextField sx={{marginBottom:3}} variant='outlined' label='Title' value={post.title} onChange={changeTitle} fullWidth required/>
+  <TextField sx={{marginBottom:3}} variant='outlined' label='Author Name' value={post.author} onChange={changeAuthor} fullWidth required/>
+  <TextField sx={{marginBottom:3}} variant='outlined' label='Body' value={post.content} onChange={changeContent} multiline rows={5} fullWidth required/>
+  <FormControl fullWidth>
+  <InputLabel id="select-label">Category</InputLabel>
+  <Select sx={{marginBottom:3}} value={post.category} labelId="select-label" label='Category' onChange={changeCategory}>
+    <MenuItem value='Technology'>Technology</MenuItem>
+    <MenuItem value='CurrentAffairs'>CurrentAffairs</MenuItem>
+    <MenuItem value='Eatries'>Eatries</MenuItem>
+  </Select>
+  </FormControl>
+      <Button variant='contained' fullWidth size='small' type='Submit'>Add Post</Button>
 </form>
 
 
