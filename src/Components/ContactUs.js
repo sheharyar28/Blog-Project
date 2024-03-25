@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { TextField, Button } from '@mui/material';
+import { TextField, Button,Box } from '@mui/material';
 
 const ContactUs = () => {
   
@@ -22,20 +22,15 @@ const ContactUs = () => {
 
   return (
     <body className='contactBody'>
-    <div>
-      <form onSubmit={afterSubmit}>
-
-  <br/>
-      <TextField variant='outlined' label='Full Name' type='text' value={user.name} onChange={changeName} required fullWidth/><br/><br/>
-      <TextField variant='outlined' label='Email Address' type='email' value={user.email}  onChange={changeEmail} required fullWidth/><br/> <br/>
-      <TextField variant='outlined' label='Comment' multiline rows={4} value={user.message}  onChange={changeMessage} required fullWidth/><br/><br/>
-      <Button className='submitBtn' type='submit' variant='contained' >Submit</Button>
-</form>
-{/* <div className='results'>
-<h1>Full Name is {user.name}</h1>
-<h1>Email Address is {user.email}</h1>
-<h1>Message is {user.message}</h1><br/>
-</div> */}
+    <div style={{display:'flex', justifyContent:'center'}}>
+      <form style={{width:"100%", display: 'flex',justifyContent: 'center'}} onSubmit={afterSubmit}>
+        <Box sx={{width:{xs:'100%',lg:'50%'}}}>
+          <TextField sx={{marginTop:4}} variant='outlined' label='Full Name' type='text' value={user.name} onChange={changeName} required fullWidth/>
+          <TextField sx={{marginTop:4}} variant='outlined' label='Email Address' type='email' value={user.email}  onChange={changeEmail} required fullWidth/>
+          <TextField sx={{marginTop:4}} variant='outlined' label='Comment' multiline rows={4} value={user.message}  onChange={changeMessage} required fullWidth/>
+          <Button sx={{marginTop:4}} className='submitBtn' type='submit' variant='contained' >Submit</Button>
+        </Box>
+      </form>
     </div>
     </body>
   )
