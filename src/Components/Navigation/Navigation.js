@@ -1,5 +1,4 @@
-import {Grid,Link} from '@mui/material'
-// import * as React from 'react';
+import {Grid,Link,Box, Typography} from '@mui/material'
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 import logo from '../Images/logo.JPG'
@@ -49,44 +48,45 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
-
-
-
-
 const Navigation = () => {
   return (
     <nav className='navClass'>
-        <Grid container spacing={3}>
-          <Grid item xs={1} md={2} lg={2}>
-          <Link href='https://www.facebook.com/'>
-            <FacebookIcon color='primary'/>
+        <Grid sx={{alignItems:'center',justifyContent:'center'}} container spacing={3}>
+          <Grid item sx={{display:{xs:'none',lg:'block'}}} md={2}>
+            <Link href='https://www.facebook.com/'>
+              <FacebookIcon color='primary'/>
             </Link>
             <Link href='https://www.twitter.com/'>
-            <TwitterIcon color='primary'/>
+              <TwitterIcon color='primary'/>
             </Link>
             <Link href='https://www.instagram.com/'>
-            <InstagramIcon sx={{color:'#f53867'}}/>
+              <InstagramIcon sx={{color:'#f53867'}}/>
             </Link>
           </Grid>
-          <Grid item xs={6} md={6} lg={6}>
-        <NavLink to='/'><img className='logo' src={logo} height='30px' width='200px' alt='Logo Here'/> </NavLink>
-
-        <NavLink to='categories'> CATEGORIES </NavLink>
-        <NavLink to='addPost'> ADD POST </NavLink> 
-        <NavLink to='ContactUs'>CONTACT</NavLink>
-        </Grid>
-        <Grid item xs={4} md={4} lg={4}>
-        <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Dummy Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
+          <Grid item xs={12} md={7}>
+            <Box sx={{display:'flex',justifyContent:'center', width:'100%', alignItems:'center'}}>
+              <Box sx={{display:{xs:'none',md:'block'}}}>
+                <NavLink to='/'><img className='logo' src={logo} height='50px' width='300px' alt='Logo Here'/>
+                </NavLink>
+              </Box>
+              <Typography variant='h5' sx={{display:{xs:'block',md:'none'},fontWeight:900}}><NavLink style={{borderRadius:'50%',padding:5}} to="/">AB</NavLink></Typography>
+              <NavLink className="NavItems" to='categories'> CATEGORIES </NavLink>
+              <NavLink className="NavItems" to='addPost'> ADD POST </NavLink> 
+              <NavLink className="NavItems" to='ContactUs'>CONTACT</NavLink>
+            </Box>
+          </Grid>
+          <Grid item sx={{display:{xs:'none',lg:'block'}}} md={3}>
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Dummy Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
         
-        </Grid>
+          </Grid>
         </Grid>
     </nav>
   )
