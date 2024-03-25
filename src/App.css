@@ -10,10 +10,15 @@ hr{
 .navClass{
   text-align: center;
   background-color: rgba(42, 59, 0, 0.897);
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 25px;
 }
-
+@media only screen and (max-width:1200px){
+  .NavItems{
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
 nav a{
   
   padding-right:7px;
@@ -57,10 +62,10 @@ hr{
 .contactBody{
   background-image: url('./Components/Images/ContactUs.jpg');
   background-size: cover;
-  background-repeat: none;
-  padding-bottom: 449px;
-  min-height: 100%;
-  width: 100%;
+  background-position: center center;
+  background-color: white;
+  background-blend-mode: hard-light;
+  height: 100vh;
 }
 
 .results{
@@ -80,37 +85,12 @@ hr{
   width: 100%;
   padding-top: 10px;
 }
-@media only screen and (min-width: 1200px) {
-  .title{
-    top:7.5%;
-    position:absolute;
-    font-size: 100px;
-    color:white;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .title{
-    top:20%;
-    position:absolute;
-    font-size: 70px;
-    color:white;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .title{
-    top:30%;
-    position:absolute;
-    font-size: 50px;
-    color:white;
-  }
-}
-.headerTitle{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-
+@media only screen and (max-with:'500px') {
+  .title{
+    font-size: 60px;
+  }
+}
 .mainImg{
   width:100%;
   height:800px;
@@ -129,10 +109,10 @@ h1{
   text-align: center;
 }
 p{
-  text-align: justify;
+  text-align: left;
   padding: 5px;
   font-size: large;
-  word-spacing: 10px;
+  word-spacing: 6px;
 }
 .newspage{
   background-color: rgb(166, 255, 166);
@@ -166,8 +146,9 @@ p{
   width: 15%;
 }
 
-.catanchor{
+.CatagoriesLink{
   text-decoration: none;
+  cursor: pointer;
 }
                                                     /* News Pages Styling */
 
