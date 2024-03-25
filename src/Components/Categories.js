@@ -8,10 +8,10 @@ const Categories = () => {
 
     const newsNavigate = useNavigate()
   return (
-    <Grid container spacing={3} justifyContent="center" alignItems="center" direction='column'>
-      <Grid item sx={12}>
-        <a className='catanchor' href='#' onClick={()=>newsNavigate('../CurrentAffairs')}>
-        <Card sx={{width:500,height:400}}>
+    <Grid sx={{paddingLeft:'40px',paddingRight:'40px'}} container spacing={5} justifyContent="center" alignItems="center" direction='row'>
+      <Grid sx={{marginTop:'20px'}} item xs={4}>
+        <span className='CatagoriesLink' href='#' onClick={()=>newsNavigate('../CurrentAffairs')}>
+        <Card sx={{height:400}}>
           <CardMedia component='img' height='300px' image={cAffairs} alt='Category of Current Affairs'/>
           <CardContent>
             <Typography variant='h5' component='div'>
@@ -19,11 +19,11 @@ const Categories = () => {
             </Typography>
           </CardContent>
         </Card>
-        </a>
-        </Grid>
-        <Grid item sx={12}>
-        <a className='catanchor' href='#' onClick={()=>newsNavigate('../Technology')}>
-        <Card sx={{width:500,height:400}}>
+        </span>
+      </Grid>
+      <Grid sx={{marginTop:'20px'}} item xs={4}>
+        <span className='CatagoriesLink' href='#' onClick={()=>newsNavigate('../Technology')}>
+        <Card sx={{height:400}}>
           <CardMedia component='img' height='300px' image={tech} alt='Category of Technology'/>
           <CardContent>
             <Typography variant='h5' component='div'>
@@ -31,11 +31,11 @@ const Categories = () => {
             </Typography>
           </CardContent>
         </Card>
-        </a>
+        </span>
       </Grid>
-        <Grid item sx={12}>
-        <a className='catanchor' href='#' onClick={()=>newsNavigate('../Eatries')}>
-        <Card sx={{width:500,height:400}}>
+      <Grid sx={{marginTop:'20px'}} item xs={4}>
+        <span className='CatagoriesLink' href='#' onClick={()=>newsNavigate('../Eatries')}>
+        <Card sx={{height:400}}>
           <CardMedia component='img' height='300px' image={eat} alt='Category of Eatries'/>
           <CardContent>
             <Typography variant='h5' component='div'>
@@ -43,8 +43,8 @@ const Categories = () => {
             </Typography>
           </CardContent>
         </Card>
-        </a>
-        </Grid>
+        </span>
+      </Grid>
     </Grid>
   )
 }
