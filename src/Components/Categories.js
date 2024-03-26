@@ -1,4 +1,4 @@
-import { Grid,Card, CardMedia, CardContent, Typography } from '@mui/material'
+import { Grid,Card, CardMedia, CardContent, Typography,Container } from '@mui/material'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import cAffairs from './Images/CAffairs.jpg'
